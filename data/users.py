@@ -1,0 +1,5 @@
+users = [
+    {"username": "standard_user", "password": "secret_sauce", "expected": "success"},
+    {"username": "locked_out_user", "password": "secret_sauce", "expected": "error"},
+    {"username": "problem_user", "password": "secret_sauce", "expected": "success"},
+]
