@@ -1,26 +1,68 @@
 # SauceDemo Playwright Automation Framework
 
-**Playwright + Python + Pytest**.
+ **Playwright + Python**.
 
-## Technology
-- Playwright
-- Python 3.11+
-- Pytest + Allure reporting
-- Page Object Model (POM)
-- Data-driven testing
+## About the project
+
+A demo project showcasing QA automation engineering skills.  
+Includes **UI Automation**, **API Testing** and best practices.
+
+## Technologies and Tools
+
+- **Playwright** + Python (synchronous API)
+- **Pytest** + Allure Reporting
+- **Page Object Model (POM)** + BasePage
+- **Data-driven testing**
+- **Requests** — API Automation
+- **Postman** + Newman (`/postman`)
+- **YAML Config**
+- **GitHub Actions** (CI/CD)
+
+## Project Structure
+
+qa-playwright-practice/
+├── pages/                   
+├── tests/                   
+├── config/                   
+├── utils/                   
+├── data/                    
+├── postman/                
+├── .github/workflows/        
+├── reports/                  
+├── screenshots/              
+├── pytest.ini
+├── requirements.txt
+└── README.md
 
 ## Running tests
 
-```bash
-# Activate the environment
-source venv/bin/activate
+# All tests
+(`/pytest tests/ -q`)
 
-# Set dependencies
-pip install -r requirements.txt
+# Generating the Allure report
+- **pytest tests/ --alluredir=reports/allure-results**
+- **allure serve reports/allure-results**
 
-# Run all tests
-pytest tests/
+# API tests only
+- **pytest tests/test_api.py -q**
 
-# Run with the Allure report
-pytest tests/ --alluredir=reports/allure-results
-allure serve reports/allure-results
+## What has been implemented
+- **UI Automation**
+
+- **Successful and failed login (data-driven)**
+- **The complete end-to-end process of purchasing a product**
+- **Shopping Cart and Checkout**
+
+## API Automation
+
+- **Tests using the library requests**
+- **Postman collection (postman/SauceDemo_API_Collection.json)**
+
+## Best Practices
+
+- **Page Object Model**
+- **YAML configuration**
+- **Automatic screenshots when the app crashes**
+- **Logging**
+- **Test markers (@smoke, @e2e, @api)**
+- **Allure reports**

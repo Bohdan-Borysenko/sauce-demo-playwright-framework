@@ -3,3 +3,4 @@ pytest
 PyYAML
 allure-pytest
 faker
+requests

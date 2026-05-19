@@ -1,4 +1,5 @@
 base_url: "https://www.saucedemo.com"
 browser: "chromium"
 headless: false
-timeout: 30000
+timeout: 15000
+slow_mo: 0
